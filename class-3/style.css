@@ -1,0 +1,50 @@
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+.wrapper {
+    background-color: rgb(0, 204, 68);
+    padding: 20px;
+}
+
+h1 {
+    font-size: 50px;
+    text-transform: uppercase;
+}
+
+p {
+    font-size: 20px;
+}
+
+.wrapper ul {
+    list-style: none;
+}
+
+.wrapper ul li {
+    color: white;
+    background-color: black;
+    padding: 10px;
+    margin-bottom: 5px;
+}
+
+.wrapper a {
+    color: black;
+    text-decoration: none;
+    background-color: white;
+    padding: 10px;
+}
+
+.wrapper table,
+.wrapper table tr th,
+.wrapper table tr td {
+    border: 1px solid black;
+}
+
+.wrapper table tr th,
+.wrapper table tr td {
+    padding: 10px;
+}
+
+.wrapper table tr th {
+    background-color: white;
+}
