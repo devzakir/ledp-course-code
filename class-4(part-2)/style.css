@@ -1,0 +1,41 @@
+* {
+    padding: 0;
+    outline: 0;
+    margin: 0;
+}
+
+.wrapper {
+    width: 800px;
+    margin: 0 auto;
+}
+
+.box {
+    width: 150px;
+    height: 100px;
+    background-color: tomato;
+    margin: 10px;
+    display: inline-block;
+
+    color: white;
+}
+
+.box3, .content2 {
+    opacity: 50%;
+}
+
+.content {
+    width: 100%;
+    display: inline-block;
+    background-color: teal;
+    color: white;
+    padding: 50px 100px;
+    margin-bottom: 30px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.content h3 {
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
