@@ -1,0 +1,237 @@
+* {
+    padding: 0;
+    margin: 0;
+    outline: 0;
+}
+
+p {
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 0;
+}
+
+header .navbar-brand {
+    width: 70px;
+}
+
+ul li {
+    list-style: none;
+    padding: 0;
+}
+
+
+/* header .navbar-brand img {
+    height: 100%;
+    width: auto;
+} */
+
+.slider {
+    padding: 250px 0;
+    background-image: url('../img/banner.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 1;
+    color: white;
+}
+
+.slider::after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.4;
+    z-index: -1;
+}
+
+.feature {
+    padding: 100px 0 40px;
+}
+
+.feature-box img {
+    max-width: 50px;
+}
+.partners {
+    padding: 70px 0 100px;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+.partners .company {
+    opacity: 0.5;
+
+}
+.partners .company:hover{
+    opacity: 1;
+}
+
+/* Service Section  */
+.services {
+    padding: 120px 0 130px;
+    background-color: #f7f7f7;
+}
+
+.services .heading {
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 60px;
+}
+
+.services .heading h2 {
+    font-size: 45px;
+    margin-bottom: 30px;
+}
+
+.services .heading p {
+    font-size: 18px;
+}
+
+.service-box {
+    background-color: white;
+    padding: 80px 60px 75px;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    transition: all 0.3s linear;
+}
+
+.service-box:hover {
+    box-shadow: 0 0 50px 0 rgba(35, 41, 49, 0.05);
+}
+
+.service-box .icon {
+    height: 50px;
+    width: auto;
+    margin-bottom: 35px;
+}
+.service-box h3 {
+    margin-bottom: 25px;
+    font-size: 18px;
+    color: #333;
+}
+.service-box p {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 0;
+}
+.service-box .icon img {
+    max-height: 100%;
+    width: auto;
+}
+
+
+/* Pricing box  */
+section.pricing {
+    padding: 130px 0;
+}
+
+.pricing-box {
+    border: 1px solid #ddd;
+    padding: 0 40px;
+    border-radius: 5px;
+}
+.pricing-box.active {
+    background-color: rgba(233, 32, 79, 0.9);
+    color: white;
+}
+.pricing-box.active p,
+.pricing-box.active h4,
+.pricing-box.active ul li{
+    color: white !important;
+}
+
+.pricing-box .head,
+.pricing-box .body {
+    padding: 45px 0;
+}
+
+.pricing-box .head {
+    border-bottom: 1px solid #eee;
+}
+
+.pricing-box .head p.level {
+    font-size: 18px;
+}
+
+.pricing-box .head .icon {
+    height: 65px;
+    width: auto;
+    margin-top: 35px;
+}
+
+
+.pricing-box .head h4 {
+    font-size: 45px;
+    color: black;
+    margin-top: 45px;
+}
+
+.pricing-box .head p.duration{
+    font-size: 14px;
+    color: #777;
+}
+
+.pricing-box .head .icon img{
+    max-height: 100%;
+    width: auto;
+}
+
+.pricing-box .body ul li {
+    margin-bottom: 15px;
+    font-size: 14px;
+    color: #777;
+}
+.pricing-box .body ul li i {
+    font-size: 14px;
+    margin-right: 10px;
+    color: #007bff;
+}
+.pricing-box .body ul {
+    margin-bottom: 40px;
+}
+
+.pricing-box:hover {
+    box-shadow: 0 0 50px 0 rgba(35, 41, 49, 0.05);
+}
+
+
+@media(min-width: 768px) and (max-width: 991px){
+    .slider {
+        padding: 200px 0;
+    }
+}
+
+@media(max-width: 767px){
+    .partners {
+        padding: 50px 50px 70px;
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: flex-start;
+    }
+    .partners .company {
+        width: 50%;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+}
+
+@media(max-width: 575px){
+    .slider {
+        padding: 100px 0;
+    }
+    .partners {
+        padding: 50px 50px 70px;
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: flex-start;
+    }
+    .partners .company {
+        width: 100%;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+}
