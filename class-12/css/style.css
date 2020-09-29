@@ -1,0 +1,251 @@
+*{
+    padding: 0;
+    margin: 0;
+    outline: 0;
+}
+
+img {
+    outline: 0;
+}
+
+ul li, ol li {
+    list-style: none;
+}
+
+a {
+    transition:  all .3s linear;
+}
+a, a:hover {
+    text-decoration: none;
+}
+
+p {
+    font-size: 14px;
+    line-height: 24px;
+}
+
+
+/* // Reuseable Style  */
+
+.section-heading {
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.section-heading h2 {
+    font-size: 32px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    position: relative;
+    color: #333;
+    z-index: 1;
+}
+
+.section-heading h2::after{ 
+    position: absolute;
+    content: 'Services';
+    text-transform: uppercase;
+    font-size: 55px;
+    color: #eee;
+    font-weight: bolder;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+.portfolio-heading.section-heading h2::after {
+    content: 'Portfolio';
+}
+
+/* Header Start  */
+header {
+    padding-top: 100px;
+}
+
+header .navbar {
+    padding: 0;
+}
+
+header .navbar li.nav-item a.nav-link,
+.hire-me {
+    padding: 10px 35px;
+    font-size: 20px;
+}
+
+.hire-me {
+    border-radius: 25px;
+    border: 1px solid #1769ff;
+    color: #1769ff;
+}
+
+.hire-me:hover {
+    background-color: #1769ff;
+    color: white;
+}
+
+/* Banner Start */
+
+.banner {
+    background-image: url('../image/banner.jpg');
+    background-size: cover;
+    background-position: bottom;
+}
+
+.banner-content {
+    padding: 220px 0 240px;
+}
+
+.banner-content span {
+    font-size: 36px;
+    color: #333333;
+    margin-bottom: 15px;
+    font-weight: 300;
+}
+
+.banner-content h1 {
+    color: #333333;
+    font-size: 48px;
+    margin-bottom: 25px;
+}
+
+.banner-content p {
+    font-size: 16px;
+    color: #777;
+    margin-bottom: 40px;
+}
+
+a.see-my-work {
+    color: white;
+    padding: 15px 35px;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: #1769ff;
+}
+
+/* Service Section */
+section.service {
+    padding: 160px 0px 170px;
+}
+
+.service-box {
+    padding: 45px 40px;
+    text-align: center;
+    border-radius: 5px;
+}
+.service-box i {
+    font-size: 30px;
+    color: #1769ff;
+    margin-bottom: 35px;
+}
+.service-box h3 {
+    color: #222;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.service-box h3::after {
+    position: absolute;
+    content: '';
+    width: 40px;
+    height: 2px;
+    background-color: #1769ff;
+    top: 38px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.service-box p {
+    font-size: 15px;
+    color: #777;
+}
+
+.service-box.active {
+    background-color: #1769ff;
+    box-shadow: 0 0 40px 2px rgb(0 0 0 / 23%);
+}
+
+.service-box.active i,
+.service-box.active h3, 
+.service-box.active p {
+    color: white;
+}
+
+.service-box.active h3::after {
+    background-color: white;
+}
+
+
+/* Portfolio Section */
+section.portfolio {
+    padding: 160px 0px 170px;
+    background-color: #f4f4f4;
+}
+
+.portfolio-item {
+    margin-bottom: 30px;
+    height: 400px;
+    /* overflow: hidden; */
+    position: relative;
+}
+
+.portfolio-item .image img {
+    width: auto;
+    height: 400px;
+    /* max-width: 100%;
+    max-height: 100%; */
+    object-fit: cover;
+}
+
+
+.portfolio-item .overlay {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: all 0.3s linear;
+}
+
+.portfolio-item .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    background-color: #1769ff;
+}
+
+.portfolio-item:hover .overlay {
+    visibility: visible;
+    opacity: 1;
+}
+
+.portfolio-item .content p {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.portfolio-item .content h5 {
+    font-size: 24px;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 25px;
+}
+
+.portfolio-item .content span.border{
+    width: 40px;
+    background-color: #98bbfc;
+    margin: 0 auto;
+}
+
