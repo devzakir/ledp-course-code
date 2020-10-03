@@ -8,13 +8,19 @@ img {
     outline: 0;
 }
 
+ul {
+    margin: 0;
+}
+
 ul li, ol li {
     list-style: none;
 }
 
 a {
     transition:  all .3s linear;
+    display: inline-block;
 }
+
 a, a:hover {
     text-decoration: none;
 }
@@ -195,7 +201,7 @@ section.portfolio {
 }
 
 .portfolio-item .image img {
-    width: auto;
+    width: 100%;
     height: 400px;
     /* max-width: 100%;
     max-height: 100%; */
@@ -383,3 +389,79 @@ section.testimonial {
 .slick-dots li.slick-active button:before {
     color: #1769ff;
 }
+
+
+/* Sub Footer */
+.sub-footer {
+    padding: 90px 0;
+}
+
+.menu-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 55px;
+}
+
+.sub-footer ul.menu {
+    display: flex;
+    margin: 0;
+}
+
+.sub-footer .menu li a {
+    color: #222222;
+    font-size: 18px;
+    padding: 15px 30px;
+}
+
+.search-form {
+    margin-left: 60px;
+}
+
+
+.search-form input {
+    padding: 12px 30px;
+    border-radius: 30px;
+    font-size: 18px;
+    border: 1px solid #9b9b9b;
+}
+
+.footer-social-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-social-menu li a {
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+    background-color: #ebebeb;
+    color: #a7a7a7;
+    display: inline-block;
+    margin: 0 23px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 16px;
+}
+
+.footer-social-menu li a:hover{
+    background-color: #32ccfe;
+    color: white;
+    box-shadow: 0 0 20px 1px rgb(0 0 0 / 33%);
+}
+
+
+/* footer section  */
+footer {
+    padding: 40px 0 45px;
+    text-align: center;
+    border-top: 1px solid #ebebeb;
+}
+
+footer p {
+    font-size: 16px;
+    margin-bottom: 0;
+    color: #777777;
+}
+
