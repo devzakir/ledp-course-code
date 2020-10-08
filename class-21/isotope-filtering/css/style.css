@@ -1,0 +1,489 @@
+*{
+    padding: 0;
+    margin: 0;
+    outline: 0;
+}
+
+img {
+    outline: 0;
+}
+
+ul {
+    margin: 0;
+}
+
+ul li, ol li {
+    list-style: none;
+}
+
+a {
+    transition:  all .3s linear;
+    display: inline-block;
+}
+
+a, a:hover {
+    text-decoration: none;
+}
+
+p {
+    font-size: 14px;
+    line-height: 24px;
+}
+
+
+/* // Reuseable Style  */
+
+.section-heading {
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.section-heading h2 {
+    font-size: 32px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    position: relative;
+    color: #333;
+    z-index: 1;
+}
+
+.section-heading h2::after{
+    position: absolute;
+    content: 'Services';
+    text-transform: uppercase;
+    font-size: 55px;
+    color: #eee;
+    font-weight: bolder;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+.portfolio-heading.section-heading h2::after {
+    content: 'Portfolio';
+}
+
+/* Header Start  */
+header {
+    padding-top: 100px;
+}
+
+header .navbar {
+    padding: 0;
+}
+
+header .navbar li.nav-item a.nav-link,
+.hire-me {
+    padding: 10px 35px;
+    font-size: 20px;
+}
+
+.hire-me {
+    border-radius: 25px;
+    border: 1px solid #1769ff;
+    color: #1769ff;
+}
+
+.hire-me:hover {
+    background-color: #1769ff;
+    color: white;
+}
+
+/* Banner Start */
+
+.banner {
+    background-image: url('../image/banner.jpg');
+    background-size: cover;
+    background-position: bottom;
+}
+
+.banner-content {
+    padding: 220px 0 240px;
+}
+
+.banner-content span {
+    font-size: 36px;
+    color: #333333;
+    margin-bottom: 15px;
+    font-weight: 300;
+}
+
+.banner-content h1 {
+    color: #333333;
+    font-size: 48px;
+    margin-bottom: 25px;
+}
+
+.banner-content p {
+    font-size: 16px;
+    color: #777;
+    margin-bottom: 40px;
+}
+
+a.see-my-work {
+    color: white;
+    padding: 15px 35px;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: #1769ff;
+}
+
+/* Service Section */
+section.service {
+    padding: 160px 0px 170px;
+}
+
+.service-box {
+    padding: 45px 40px;
+    text-align: center;
+    border-radius: 5px;
+}
+.service-box i {
+    font-size: 30px;
+    color: #1769ff;
+    margin-bottom: 35px;
+}
+.service-box h3 {
+    color: #222;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.service-box h3::after {
+    position: absolute;
+    content: '';
+    width: 40px;
+    height: 2px;
+    background-color: #1769ff;
+    top: 38px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.service-box p {
+    font-size: 15px;
+    color: #777;
+}
+
+.service-box.active {
+    background-color: #1769ff;
+    box-shadow: 0 0 40px 2px rgb(0 0 0 / 23%);
+}
+
+.service-box.active i,
+.service-box.active h3,
+.service-box.active p {
+    color: white;
+}
+
+.service-box.active h3::after {
+    background-color: white;
+}
+
+
+/* Portfolio Section */
+section.portfolio {
+    padding: 160px 0px 170px;
+    background-color: #f4f4f4;
+}
+
+.portfolio-item {
+    margin-bottom: 30px;
+    height: 400px;
+    /* overflow: hidden; */
+    position: relative;
+}
+
+.portfolio-item .image img {
+    width: 100%;
+    height: 400px;
+    /* max-width: 100%;
+    max-height: 100%; */
+    object-fit: cover;
+}
+
+
+.portfolio-item .overlay {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: all 0.3s linear;
+}
+
+.portfolio-item .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    background-color: #1769ff;
+}
+
+.portfolio-item:hover .overlay {
+    visibility: visible;
+    opacity: 1;
+}
+
+.portfolio-item .content p {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.portfolio-item .content h5 {
+    font-size: 24px;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 25px;
+}
+
+.portfolio-item .content span.border{
+    width: 40px;
+    background-color: #98bbfc;
+    margin: 0 auto;
+}
+
+
+/* Promotion Section */
+.promotion {
+    padding: 120px 0px 130px;
+}
+
+.promotion-content h2{
+    font-size: 34px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.promotion-content p {
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+
+.promotion-button a {
+    padding: 15px 30px;
+    border: 2px solid #1769ff;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 30px;
+}
+
+/* Testimonial Section */
+section.testimonial {
+    padding: 145px 0px 160px;
+    background-color: #f4f4f4;
+}
+.testimonial-heading {
+    margin-bottom: 60px;
+}
+.testimonial-heading h2 {
+    font-size: 50px;
+    font-weight: 400;
+    width: 490px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+.testimonial-heading h2::before {
+    position: absolute;
+    top: -12px;
+    left: -77px;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f10e";
+    font-size: 150px;
+    z-index: -1;
+    color: #eeeeee;
+}
+
+.client-introduction .image {
+    width: 80px;
+    height: 80px;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 5px solid white;
+    margin: 0 auto 10px;
+
+}
+
+.client-introduction .image img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+}
+
+.client-introduction h4 {
+    font-size: 17px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+.client-introduction p {
+    font-size: 15px;
+    color: #8b8b8b;
+}
+
+.testimonial-item .feedback {
+    width: 980px;
+    margin: 0 auto;
+}
+
+.testimonial-item .feedback p {
+    font-size: 17px;
+    color: #000;
+    line-height: 30px;
+}
+
+.testimonial-slider {
+    position: relative;
+    z-index: 1;
+}
+
+.testimonial-item {
+    margin-bottom: 75px;
+}
+
+.testimonial-slider::after {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f10e";
+    font-size: 150px;
+    z-index: -1;
+    color: #eeeeee;
+    transform: scaleX(-1);
+}
+
+/* // Slick Slider CSS  */
+.slick-dots li button {
+    border: 2px solid transparent;
+    border-radius: 50%;
+}
+
+.slick-dots li button:before {
+    font-size: 18px;
+    opacity: 1;
+    color: #bcbcbc;
+}
+
+.slick-dots li.slick-active button {
+    border-color: #1769ff;
+    color: #1769ff;
+}
+
+.slick-dots li.slick-active button:before {
+    color: #1769ff;
+}
+
+
+/* Sub Footer */
+.sub-footer {
+    padding: 90px 0;
+}
+
+.menu-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 55px;
+}
+
+.sub-footer ul.menu {
+    display: flex;
+    margin: 0;
+}
+
+.sub-footer .menu li a {
+    color: #222222;
+    font-size: 18px;
+    padding: 15px 30px;
+}
+
+.search-form {
+    margin-left: 60px;
+}
+
+
+.search-form input {
+    padding: 12px 30px;
+    border-radius: 30px;
+    font-size: 18px;
+    border: 1px solid #9b9b9b;
+}
+
+.footer-social-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-social-menu li a {
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+    background-color: #ebebeb;
+    color: #a7a7a7;
+    display: inline-block;
+    margin: 0 23px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 16px;
+}
+
+.footer-social-menu li a:hover{
+    background-color: #32ccfe;
+    color: white;
+    box-shadow: 0 0 20px 1px rgb(0 0 0 / 33%);
+}
+
+
+/* footer section  */
+footer {
+    padding: 40px 0 45px;
+    text-align: center;
+    border-top: 1px solid #ebebeb;
+}
+
+footer p {
+    font-size: 16px;
+    margin-bottom: 0;
+    color: #777777;
+}
+
+
+
+.portfolio-menu {
+    display: flex;
+    margin-bottom: 30px;
+    width: 100%;
+    justify-content: center;
+}
+
+.portfolio-menu li a {
+    padding: 10px 25px;
+    border: 1px solid black;
+    color: black;
+    border-radius: 3px;
+    text-transform: uppercase;
+    margin-right: 5px;
+}
+
+.portfolio-menu li a.active {
+    background-color: black;
+    color: white;
+}

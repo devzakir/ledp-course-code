@@ -1,0 +1,54 @@
+@media(max-width: 991px) and (min-width: 768px){
+    /* header {
+        padding-top: 40px;
+    }
+
+    .service-box {
+        margin-bottom: 30px;
+    } */
+}
+
+@media(max-width: 991px){
+    header {
+        padding-top: 40px;
+    }
+
+    .service-box {
+        margin-bottom: 30px;
+    }
+    .testimonial-item .feedback {
+        width: 100%;
+    }
+    .menu-container {
+        flex-wrap: wrap;
+    }
+    .sub-footer ul.menu {
+        margin-bottom: 50px;
+    }
+    .search-form {
+        margin-left: 0;
+    }
+
+    div#navbarSupportedContent {
+        background: white;
+        padding: 10px 20px 30px;
+    }
+    header {
+    }
+}
+
+@media(max-width: 575px){
+    .testimonial-heading h2 {
+        width: 100%;
+        font-size: 28px;
+    }
+
+    .sub-footer ul.menu {
+        flex-wrap: wrap;
+    }
+
+    .sub-footer .menu li a {
+        padding-right: 5px;
+        padding-left: 5px;
+    }
+}
