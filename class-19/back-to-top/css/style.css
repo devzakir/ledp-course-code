@@ -1,0 +1,26 @@
+* {
+    padding: 0;
+    margin: 0;
+    outline: 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+
+.back-to-top {
+    width: 50px;
+    height: 50px;
+    background-color: orange;
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    text-align: center;
+    line-height: 50px;
+    cursor: pointer;
+    border-radius: 3px;
+    box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.253);
+    display: none;
+}
