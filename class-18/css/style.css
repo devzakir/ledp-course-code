@@ -1,0 +1,92 @@
+* {
+    padding: 0;
+    margin: 0;
+    outline: 0;
+}
+
+.slider-item {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 230px 0px 250px ;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+
+
+.slider-item h1  {
+    font-size: 80px;
+    color: white;
+    margin-bottom: 30px;
+}
+
+.slider-item a {
+    padding: 15px 30px;
+    border-radius: 30px;
+    background-color: orangered;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    text-transform: uppercase;
+    display: inline-block;
+}
+
+.slider-section {
+    overflow: hidden;
+    height: 650px;
+    position: relative;
+}
+
+.slider-section:before, .slider-section:after {
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    top: 0;
+    width: 50%;
+    z-index: 100;
+    border-top: 100px solid #fff;
+    border-bottom: 100px solid #fff;
+    transform: rotate(0.000001deg);
+    top: initial;
+    border-top: none;
+}
+
+.slider-section:before {
+    right: 50%;
+    border-right: 1000px solid transparent;
+    border-left: 1000px solid;
+}
+
+.slider-section:after {
+    left: 50%;
+    border-left: 1000px solid transparent;
+    border-right: 1000px solid;
+}
+
+[data-fs-scroll] .page.vertical {
+    right: 10px;
+    top: 325px;
+}
+[data-fs-scroll] .page li {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid white;
+    background-color: transparent;
+}
+
+[data-fs-scroll] .page.vertical li.active {
+    background-color: white;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+}
+
+
+
+
+/* Slider CSS */

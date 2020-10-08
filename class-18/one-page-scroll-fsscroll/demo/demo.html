@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>jQuery fsscroll Plugin Example</title>
+  <link rel="stylesheet" href="../src/jquery.fsscroll.css">
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+    }
+    html, body {
+      height: 100%;
+      overflow: hidden;
+      font-family: 'Roboto',sans-serif;
+      -webkit-font-smoothing: antialiased;
+    }
+    .container, .sections, .section {
+      position: relative;
+      height: 100%;
+      text-align: center;
+      color: #fff;
+    }
+    .section h1 {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 40px;
+      transition: all .3s ease;
+    }
+    .section:first-child h1 {
+      animation: first-show .3s;
+    }
+    .section0 {
+      background: #409EFF;
+    }
+    .section2 {
+      background: #E6A23C;
+    }
+    .section3 {
+      background: #F56C6C;
+    }
+    .section1{
+      background: #67C23A;
+    }
+    .section h1.text-animate {
+      left: 0px;
+      transform: translateX(-100%);
+    }
+    @keyframes first-show {
+      0% {
+        left: 0px;
+        transform: translateX(-100%);
+      }
+      100% {
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container" data-fs-scroll>
+    <div class="sections">
+      <div class="section section0">
+        <h1>jQuery fsscroll Plugin</h1>
+      </div>
+      <div class="section section1">
+        <h1>A jQuery Plugin</h1>
+      </div>
+      <div class="section section2">
+        <h1>One Page Scroll</h1>
+      </div>
+      <div class="section section3">
+        <h1>jQueryScript.Net</h1>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.4.0.slim.min.js" integrity="sha384-7WBfQYubrFpye+dGHEeA3fHaTy/wpTFhxdjxqvK04e4orV3z+X4XC4qOX3qnkVC6" crossorigin="anonymous"></script>
+  <script src="../src/jquery.fsscroll.js"></script>
+
+  <script>
+    $('.container').fsScroll({
+      keyboard: true,
+      loop: true,
+
+      beforeScroll: function(el, index) {
+        el.find('h1').addClass('text-animate');
+      },
+
+      afterScroll: function(el, index) {
+        el.find('h1').removeClass('text-animate');
+      }
+    })
+  </script>
+  <script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</body>
+</html>
